@@ -1,0 +1,103 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box ;
+}
+body{
+    background-color: rgb(23, 22, 22);
+    color: #fff;
+    font-family: system-ui, -apple-system;
+    
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.header{
+    text-align: center;
+    margin: 15px auto;
+    text-transform: uppercase;
+    word-spacing: 10px;
+}
+.header h2{
+    margin-bottom: 10px;
+    
+}
+.header h2,.header p{
+    color: rgb(255, 0, 0);
+}
+input{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    background-color: #111;
+    margin:4px 0;
+    margin-right:4px ;
+    border-radius: 4px;
+    padding: 4px;
+    transition: .5s;
+    color: #fff;
+}
+input:focus{
+    background-color: #000;
+transform: scale(1.03);
+}
+.inputs input{
+    width: 20%;
+}
+#total{
+    padding: 5px 2px;
+
+   color: rgb(255, 255, 255);
+    display: inline;
+    transition: .5s;
+    
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+button{
+    width: 100%;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: #470053;
+    color: #fff;
+    border-radius: 10px;
+    transition: .5s;
+    font-size: 16px;
+}
+button:hover{
+    background-color: #51045f;
+    letter-spacing: 1px;
+}
+.btn-search{
+    display: flex;
+    justify-content: space-between;
+}
+.btn-search button{
+    width: 45%;
+}
+table{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+table th{
+    text-transform: uppercase;
+}
+th,td{
+    padding: 5px;
+    
+}
+#deletall{
+    margin-top: 12px;
+}
+#search{
+    cursor: default;
+    opacity: -1;
+}

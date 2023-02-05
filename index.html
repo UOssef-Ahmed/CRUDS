@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>cruds</title>
+    <link rel = "icon" href = 
+    "https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200X200.png" 
+            type = "image/x-icon">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h2>cruds</h2>
+            <p>creat read update delet search</p>
+        </div>
+        <input type="text" placeholder="title" id="title" >
+        <div class="inputs">
+            <input type="number" placeholder="price" id="price">
+            <input type="number" placeholder="texes" id="texes">
+            <input type="number" placeholder="ads" id="ads">
+            <input type="number" placeholder="discount" id="descount">
+            <small id="total"></small> 
+        </div>
+        <input max="3" type="number" placeholder="count" id="count">
+        <input type="text" placeholder="category" id="category">
+        <button id="sub">creat</button>
+
+        <div class="outbut">
+            <div class="search-block">
+            <input onkeyup="searchData(this.value)" type="text" placeholder="search" id="search">
+            <div class="btn-search">
+            <button onclick=" getsearchMood(this.id)" id="searchTitle">search by title</button>
+            <button onclick=" getsearchMood(this.id)" id="searchCategory">search by category</button>
+        </div>
+            </div>
+            <div id="deletall"></div>
+            <table>
+                <tr>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>price</th>
+                    <th>taxes</th>
+                    <th>ads</th>
+                    <th>discount</th>
+                    <th>total</th>
+                    <th>category</th>
+                    <th>update</th>
+                    <th>delete</th>
+                </tr>
+                <tbody id="tbody"></tbody>
+                
+            </table>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
